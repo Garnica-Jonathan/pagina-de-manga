@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-template-rows: repeat(4, 1fr) ;
+	height: 247px;
+	
+	grid-template-areas: 
+	"header sub_header "
+	"barra barra"
+	"card_list card_list"
+	"card card"
+	;
+
+}
+#header{
+	grid-area: header;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    /* align-content: center; */
+    align-items: center;
+}
+#header p{
+	margin: 10px;
+    padding: 38px;
+    width: 124px;
+}
+#header ul{
+	    display: flex;
+}
+#header li{
+    font-size: 25px;
+    list-style-type: none;
+    margin: 15px;
+    padding: 8px;
+    border: 5px double;
+    width: 141px;
+    border-radius: 30px;
+    text-align: center;
+}
+.sub_header{
+	grid-area: sub_header;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+}
+.sub_header li{
+	margin: 10px;
+	padding: 10px;
+	width: 161px;
+	border: 5px double;
+	border-radius: 30px;
+}
+.barra{
+	grid-area: barra;
+}
+.barra ul{
+	display: flex;
+    justify-content: center;
+        border-top: 5px solid;
+    border-bottom: 5px solid;
+}
+.barra li{
+	margin: 11px;
+    padding: 10px;
+    /* border: 5px solid; */
+    width: 106px;
+    margin-left: 61px;
+    list-style-type: none;
+}
+.card_list{
+    grid-area: card_list;
+    padding: 22px;
+    /* width: 109px; */
+    position: relative;
+    min-height: 70vh;
+}
+.sub_list{
+    padding: 10px;
+    display: flex; 
+    flex-direction: column; 
+    position: absolute;
+        left: 238px;
+    width: 1316px;
+}
+
+
+
+
+
+
+
+
+
+
